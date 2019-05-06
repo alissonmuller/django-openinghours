@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _, pgettext_lazy
 from django.utils.encoding import python_2_unicode_compatible
 from openinghours.app_settings import PREMISES_MODEL
 
@@ -44,8 +44,8 @@ class OpeningHours(models.Model):
     start and end times of opening slots.
     """
     class Meta:
-        verbose_name = _('Opening Hours')  # plurale tantum
-        verbose_name_plural = _('Opening Hours')
+        verbose_name = pgettext_lazy('Opening Hours singular', 'Opening Hours')  # plurale tantum
+        verbose_name_plural = pgettext_lazy('Opening Hours plural', 'Opening Hours')
         ordering = ['company', 'weekday', 'from_hour']
 
     company = models.ForeignKey(PREMISES_MODEL, verbose_name=_('Company'), on_delete=models.CASCADE)
@@ -56,7 +56,7 @@ class OpeningHours(models.Model):
     def __str__(self):
         return _("%(premises)s %(weekday)s (%(from_hour)s - %(to_hour)s)") % {
             'premises': self.company,
-            'weekday': self.weekday,
+            'weekday': self.get_weekday_display(),
             'from_hour': self.from_hour,
             'to_hour': self.to_hour
         }
