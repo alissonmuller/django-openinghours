@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Alisson Müller <alissonmller@gmail.com>, 2019
+msgid ""
+msgstr ""
+"Project-Id-Version: django-openinghours\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-06 12:48-0300\n"
+"PO-Revision-Date: 2019-05-06 14:51-0300\n"
+"Last-Translator: Alisson Müller <alissonmller@gmail.com>, 2019\n"
+"Language-Team: Portuguese (Brazil) <pt-br@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: models.py:10
+msgid "Monday"
+msgstr "Segunda-feira"
+
+#: models.py:11
+msgid "Tuesday"
+msgstr "Terça-feira"
+
+#: models.py:12
+msgid "Wednesday"
+msgstr "Quarta-feira"
+
+#: models.py:13
+msgid "Thursday"
+msgstr "Quinta-feira"
+
+#: models.py:14
+msgid "Friday"
+msgstr "Sexta-feira"
+
+#: models.py:15
+msgid "Saturday"
+msgstr "Sábado"
+
+#: models.py:16
+msgid "Sunday"
+msgstr "Domingo"
+
+#: models.py:27 models.py:51 models.py:76
+msgid "Company"
+msgstr "Estabelecimento"
+
+#: models.py:28
+msgid "Companies"
+msgstr "Estabelecimentos"
+
+#: models.py:31
+msgid "Name"
+msgstr "Nome"
+
+#: models.py:32
+msgid "Slug"
+msgstr ""
+
+#: models.py:33
+msgid "Logo"
+msgstr "Logotipo"
+
+#: models.py:47
+msgctxt "Opening Hours singular"
+msgid "Opening Hours"
+msgstr "Horário de funcionamento"
+
+#: models.py:48
+msgctxt "Opening Hours plural"
+msgid "Opening Hours"
+msgstr "Horários de funcionamento"
+
+#: models.py:52
+msgid "Weekday"
+msgstr "Dia da semana"
+
+#: models.py:53
+msgid "Opening"
+msgstr "Abertura"
+
+#: models.py:54
+msgid "Closing"
+msgstr "Fechamento"
+
+#: models.py:57
+#, python-format
+msgid "%(premises)s %(weekday)s (%(from_hour)s - %(to_hour)s)"
+msgstr ""
+
+#: models.py:72
+msgid "Closing Rule"
+msgstr "Regra de fechamento"
+
+#: models.py:73
+msgid "Closing Rules"
+msgstr "Regras de fechamento"
+
+#: models.py:77
+msgid "Start"
+msgstr "Início"
+
+#: models.py:78
+msgid "End"
+msgstr "Fim"
+
+#: models.py:79
+msgid "Reason"
+msgstr "Motivo"
+
+#: models.py:82
+#, python-format
+msgid ""
+"%(premises)s is closed from %(start)s to %(end)s        due to %(reason)s"
+msgstr ""
+"%(premises)s está fechado de %(start)s até %(end)s        devido a %(reason)s"
+
+#: templatetags/openinghours_tags.py:20 templatetags/openinghours_tags.py:32
+msgid "today"
+msgstr "hoje"
