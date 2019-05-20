@@ -7,11 +7,11 @@ except ImportError:
 from openinghours.models import OpeningHours, ClosingRules, PREMISES_MODEL
 from django.core.exceptions import ImproperlyConfigured
 
-from django.apps import apps
+from django.apps import apps as global_apps
 from django.utils import timezone
 
 
-def get_premises_model():
+def get_premises_model(apps=global_apps):
     """
     Support for custom company premises model
     with developer friendly validation.
